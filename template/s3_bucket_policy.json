@@ -10,8 +10,8 @@
             "Effect": "Allow",
             "Action": "s3:*",
             "Resource": [
-                "${aws_s3_bucket.guardduty_security_bucket.arn}",
-                "${aws_s3_bucket.guardduty_security_bucket.arn}/*"
+                "${bucket_arn}",
+                "${bucket_arn}/*"
             ]
         }
     ]

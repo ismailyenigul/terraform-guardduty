@@ -30,6 +30,10 @@ module "terraform-guardduty" {
   guardduty_role_name  "GuardDuty_Manager"
   guardduty_subscription_protocol = "sms"
   guardduty_notification_endpoint = <Notificaion endpoint>
+  create_s3_bucket = true/false
+  enable_guardduty_ipset = true/false
+  guardduty_bucket_name = "my-guard-duty-bucket-name"
+
 
 }
 ```
